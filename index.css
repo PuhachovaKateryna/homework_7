@@ -1,0 +1,584 @@
+*{
+    margin: 0px;
+}
+
+.container{
+    display: flex;   
+    justify-content: center; 
+    align-items: center;   
+    height: 100vh;            
+}
+
+.background {
+    width: 800px;  
+    height: 600px; 
+    background-image: url(./images/background.png); 
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    z-index:2;
+}
+
+.ground{
+    z-index: -1;
+}
+
+
+
+.windmill{
+    position:relative;
+    left: 603px;
+    top: -253px;
+}
+
+.blade{
+    position:relative;
+    left: 242px;
+    top: 188px;
+    text-align: center;
+    animation: blade 8s linear infinite;   
+}
+
+
+
+
+@keyframes blade{
+    
+    100% {
+        transform: rotateZ(-360deg); 
+}
+}
+.clouds{
+    position: relative;
+    left: 640px;
+}
+.cloud-1{
+    top: -100px;
+    animation: cloud 20s linear infinite 0.5s ;
+}
+.cloud-2{
+    top: -110px;
+    animation: cloud 25s ease-in infinite 2s ;
+}
+.cloud-3{
+    top: -128px;
+    animation: cloud 50s ease-in-out infinite 3s ;
+}
+.cloud-4{
+    top: -120px;
+    animation: cloud 30s ease-out infinite 6s ;
+}
+@keyframes cloud{
+    from{
+        left: 630px;
+    }
+    to{
+        left: -370px;
+    }
+}
+
+.snow{
+   position: relative;
+      
+}
+.snow-1{
+    top: -600px;
+    left: 100px;
+    animation: snow-1  20s linear infinite ;
+}
+.snow-2{
+    top: -570px;
+    left: 420px;
+    animation: snow-2  30s linear infinite;
+}
+.snow-3{
+    top: -500px;
+    left: 700px;
+    animation: snow-3 20s linear infinite;  
+}
+.snow-4{
+    top: -560px;
+    left: 282px;
+    animation: snow-4 40s linear infinite 0.5s;
+}
+.snow-5{
+    top: -500px;
+    left: 50px;
+    animation: snow-5 20s linear infinite 0.5s;
+}
+.snow-6{
+    top: -400px;
+    left: 300px;
+    animation: snow-6 40s linear infinite 0.5s;
+}
+
+.snow-7{
+    top: -400px;
+    left: 500px;
+    animation: snow-7 30s linear infinite;
+}
+
+.snow-8{
+    top: -600px;
+    left: 240px;
+    animation: snow-8 50s linear infinite 0.5s;
+}
+
+.snow-9{
+    top: -500px;
+    left: 700px;
+    animation: snow-9 40s linear infinite;  
+}
+
+
+
+@keyframes snow-1{
+    0%{
+        opacity: 1;
+        top: -600px;
+        left: 100px;
+    }
+    10%{
+        top: -550px;
+        left: 80px;
+    }
+    20%{
+        top: -500px;
+        left: 65px;
+    }
+    30%{
+        top: -450px;
+        left: 75px;
+    }
+    40%{
+        top: -400px;
+        left: 60px;
+    }
+    50%{
+        top: -350px;
+        left: 55px;
+    }
+    60%{
+        top: -300px;
+        left: 60px;
+    }
+    70%{
+        top: -200px;
+        left: 80px;
+    }
+    80%{
+        top: -100px;
+        left: 70px;
+    }
+    90%{
+        top: 0px;
+        left: 90px;
+    }
+    100%{
+        top: 0px;
+        left: 80px;
+        opacity: 0;
+    }
+}
+@keyframes snow-2{
+    0%{
+        opacity: 1;
+        top: -530px;
+        left: 420px;
+    
+    }
+    10%{
+        top: -510px;
+        left: 400px;
+    }
+    20%{
+        top: -480px;
+        left: 360px;
+    }
+    30%{
+        top: -400px;
+        left: 390px;
+    }
+    40%{
+        top: -350px;
+        left: 410px;
+    }
+    50%{
+        top: -300px;
+        left: 370px;
+    }
+    60%{
+        top: -250px;
+        left: 360px;
+    }
+    70%{
+        top: -200px;
+        left: 390px;
+    }
+    80%{
+        top: -100px;
+        left: 410px;
+    }
+    90%{
+        top: -50px;
+        left: 390px;
+    }
+    100%{
+        top: 0px;
+        left: 400px;
+        opacity: 0;
+    }
+}
+@keyframes snow-3{
+    0%{
+        opacity: 1;
+        top: -500px;
+        left: 700px;
+    
+    }
+    10%{
+        top: -450px;
+        left: 670px;
+    }
+    20%{
+        top: -400px;
+        left: 710px;
+    }
+    30%{
+        top: -350px;
+        left: 680px;
+    }
+    40%{
+        top: -310px;
+        left: 700px;
+    }
+    50%{
+        top: -270px;
+        left: 680px;
+    }
+    60%{
+        top: -225px;
+        left: 700px;
+    }
+    70%{
+        top: -180px;
+        left: 685px;
+    }
+    80%{
+        top: -120px;
+        left: 700px;
+    }
+    90%{
+        top: -50px;
+        left: 630px;
+    }
+    100%{
+        top: 0px;
+        left: 400px;
+        opacity: 0;
+    }
+}
+@keyframes snow-4{
+    0%{
+        opacity: 1;
+        top: -560px;
+        left: 282px;
+    
+    }
+    10%{
+        top: -500px;
+        left: 270px;
+    }
+    20%{
+        top: -470px;
+        left: 300px;
+    }
+    30%{
+        top: -450px;
+        left: 280px;
+    }
+    40%{
+        top: -410px;
+        left: 290px;
+    }
+    50%{
+        top: -370px;
+        left: 300px;
+    }
+    60%{
+        top: -325px;
+        left: 280px;
+    }
+    70%{
+        top: -270px;
+        left: 305px;
+    }
+
+    80%{
+        top: -200px;
+        left: 270px;
+    }
+    90%{
+        top: -100px;
+        left: 290px;
+    }
+    100%{
+        top: 0px;
+        left: 290px;
+        opacity: 0;
+    }
+}
+@keyframes snow-5{
+    0%{
+        opacity: 1;
+        top: -500px;
+        left: 50px;
+    
+    }
+    10%{
+        top: -450px;
+        left: 40px;
+    }
+    20%{
+        top: -400px;
+        left: 60px;
+    }
+    30%{
+        top: -350px;
+        left: 33px;
+    }
+    40%{
+        top: -300px;
+        left: 45px;
+    }
+    50%{
+        top: -260px;
+        left: 100px;
+    }
+    60%{
+        top: -205px;
+        left: 40px;
+    }
+    70%{
+        top: -150px;
+        left: 55px;
+    }
+
+    80%{
+        top: -100px;
+        left: 50px;
+    }
+    90%{
+        top: -50px;
+        left: 60px;
+    }
+    100%{
+        top: 0px;
+        left: 55px;
+        opacity: 0;
+    }
+}
+@keyframes snow-6{
+    0%{
+        opacity: 1;
+        top: -400px;
+        left: 300px;
+    
+    }
+    10%{
+        top: -370px;
+        left: 320px;
+    }
+    20%{
+        top: -330px;
+        left: 333px;
+    }
+    30%{
+        top: -300px;
+        left: 313px;
+    }
+    40%{
+        top: -260px;
+        left: 305px;
+    }
+    50%{
+        top: -210px;
+        left: 310px;
+    }
+    60%{
+        top: -185px;
+        left: 290px;
+    }
+    70%{
+        top: -120px;
+        left: 305px;
+    }
+
+    80%{
+        top: -80px;
+        left: 320px;
+    }
+    90%{
+        top: -50px;
+        left: 300px;
+    }
+    100%{
+        top: 0px;
+        left: 295px;
+        opacity: 0;
+    }
+}
+
+@keyframes snow-7{
+    0%{
+        opacity: 1;
+        top: -490px;
+        left: 360px;
+    
+    }
+    10%{
+        top: -350px;
+        left: 320px;
+    }
+    20%{
+        top: -330px;
+        left: 333px;
+    }
+    30%{
+        top: -300px;
+        left: 310px;
+    }
+    40%{
+        top: -260px;
+        left: 305px;
+    }
+    50%{
+        top: -210px;
+        left: 310px;
+    }
+    60%{
+        top: -190px;
+        left: 290px;
+    }
+    70%{
+        top: -120px;
+        left: 305px;
+    }
+
+    80%{
+        top: -70px;
+        left: 310px;
+    }
+    90%{
+        top: -80px;
+        left: 350px;
+    }
+    100%{
+        top: 0px;
+        left: 245px;
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes snow-8{
+    0%{
+        opacity: 1;
+        top: -400px;
+        left: 650px;
+    
+    }
+    10%{
+        top: -450px;
+        left: 670px;
+    }
+    20%{
+        top: -460px;
+        left: 700px;
+    }
+    30%{
+        top: -350px;
+        left: 680px;
+    }
+    40%{
+        top: -310px;
+        left: 700px;
+    }
+    50%{
+        top: -270px;
+        left: 680px;
+    }
+    60%{
+        top: -225px;
+        left: 700px;
+    }
+    70%{
+        top: -180px;
+        left: 685px;
+    }
+    80%{
+        top: -120px;
+        left: 700px;
+    }
+    90%{
+        top: -100px;
+        left: 630px;
+    }
+    100%{
+        top: 0px;
+        left: 400px;
+        opacity: 0;
+    }
+}
+
+@keyframes snow-3{
+    0%{
+        opacity: 1;
+        top: -510px;
+        left: 670px;
+    
+    }
+    10%{
+        top: -450px;
+        left: 670px;
+    }
+    20%{
+        top: -400px;
+        left: 710px;
+    }
+    30%{
+        top: -350px;
+        left: 680px;
+    }
+    40%{
+        top: -300px;
+        left: 650px;
+    }
+    50%{
+        top: -270px;
+        left: 680px;
+    }
+    60%{
+        top: -225px;
+        left: 700px;
+    }
+    70%{
+        top: -180px;
+        left: 685px;
+    }
+    80%{
+        top: -120px;
+        left: 700px;
+    }
+    90%{
+        top: -50px;
+        left: 630px;
+    }
+    100%{
+        top: 0px;
+        left: 400px;
+        opacity: 0;
+    }
+}
